@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #2563EB;
+  --color-primary-light: #3B82F6;
+  --color-primary-lighter: #60A5FA;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-50: #EFF6FF;
+  --color-primary-100: #DBEAFE;
+  --color-primary-200: #BFDBFE;
+  --color-primary-300: #93C5FD;
+  --color-accent: #F59E0B;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F8FAFC;
+  --color-border: #E2E8F0;
+  --color-border-blue: #BFDBFE;
+  --color-heading: #0F172A;
+  --color-body: #334155;
+  --color-muted: #94A3B8;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-surface-alt);
+  color: var(--color-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #2563EB, #0EA5E9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-mesh {
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(219, 234, 254, 0.7) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(191, 219, 254, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 40% 100%, rgba(147, 197, 253, 0.3) 0%, transparent 50%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.card-base {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-base:hover {
+  border-color: var(--color-primary-200);
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.08);
+  transform: translateY(-2px);
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(37, 99, 235, 0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float 6s ease-in-out 2s infinite;
+}
