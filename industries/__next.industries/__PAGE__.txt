@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[77590,["/chatscope-website/_next/static/chunks/120wb-o.yky4z.js","/chatscope-website/_next/static/chunks/0getnx--xxdy9.js","/chatscope-website/_next/static/chunks/0d3shmwh5_nmn.js","/chatscope-website/_next/static/chunks/039lvosp5uw4y.js"],"default"]
+3:I[97367,["/chatscope-website/_next/static/chunks/120wb-o.yky4z.js","/chatscope-website/_next/static/chunks/0getnx--xxdy9.js","/chatscope-website/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/chatscope-website/_next/static/chunks/039lvosp5uw4y.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"rRjoGl_BQvxgXIYT-Wtqa"}
+5:null
